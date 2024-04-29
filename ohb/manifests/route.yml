@@ -3,7 +3,7 @@ kind: Route
 metadata:
   name: ohb-route
 spec:
-  host: ohb.apps.ocp4.openshift.local 
+  host: ohb-testing.apps.ocp4.openshift.local 
   port:
     targetPort: 7777
   to:
