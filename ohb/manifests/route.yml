@@ -6,7 +6,6 @@ spec:
   host: ohb.apps.ocp4.openshift.local 
   port:
     targetPort: 7777
-    termination: edge
   to:
     kind: Service
     name: ohb-service
