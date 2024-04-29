@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ohb
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: ohb
+  template:
+    metadata:
+      labels:
+        app: ohb
+    spec:
+      containers:
+      - name: ohb
+        image: docker.io/kubi79/ohb:main
+        imagePullPolicy: Always
